@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <title>caseCheck</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <title>caseCheck</title>    
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+
+    <link rel="stylesheet" href="./libs/autoComplete/css/autoComplete.01.css">
+    <link rel="stylesheet" href="./libs/custom-select/custom-select.css">
 </head>
 <body>
     <div class="wrapper">
@@ -40,7 +45,14 @@
             </div>
             <div class="buttons">
                 <button class="btn-calculate">Посчитать</button>
-                <button class="btn-valute">Показать в ₽</button>
+                <div class="form__input-wrapper">
+                    <select name="activity" id="activity" class="form__select">
+                        <option value="rub">₽ RUB</option>
+                        <option value="usd">$ USD</option>
+                        <option value="eur">€ EUR</option>
+                    </select>
+                </div>
+
             </div>
             <div class="warning">
                 <span class="warn-title">Внимание</span>: не забывайте, что вас инвентарь должен быть публичным.
@@ -60,6 +72,11 @@
     </footer>
 
 </div>
-    <script src="./js/main.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+<script src="./libs/custom-select/custom-select.min.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>

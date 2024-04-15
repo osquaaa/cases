@@ -1,4 +1,5 @@
 @import "./reset.css";
+@import "./autoSelect-01.css"; 
 body, html{
     background-color: rgb(20, 20, 38);
     width: 100%;
@@ -190,3 +191,15 @@ body, html{
         font-size: 14px;
     }
 }
+
+.form__input-wrapper {
+    background-color: rgb(157, 157, 255);
+    padding: 13px 20px;
+    border-radius: 8px;
+    color: rgb(20, 20, 38);
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: 16px 24px;
+}
+
