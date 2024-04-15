@@ -80,7 +80,8 @@ body, html{
     justify-content: center;
     flex: 1 1 auto;
     padding-bottom: 80px;
-    
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .title{
     font-size: 55px;
