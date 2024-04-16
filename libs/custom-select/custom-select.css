@@ -32,7 +32,7 @@
   width: 100%;
 }
 .custom-select-container.is-open .custom-select-panel {
-  max-height: 10.7em;
+  max-height: 12em;
   overflow-y: auto
 }
 .custom-select-option {
@@ -91,5 +91,5 @@
 }
 
 .custom-select-option.has-focus {
-	background-color: #ebe5f9;
+	background-color: rgb(199, 199, 255);
 }
